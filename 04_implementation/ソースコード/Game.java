@@ -1,4 +1,4 @@
-package Mini;
+package Minipro;
 
 import java.util.ArrayList;
 
@@ -41,7 +41,7 @@ public class Game {
 		}
 	}
 	
-	private void changePlayer() {
+	public void changePlayer() {
 		if(recordTurn.size() % 2 == 1) {
 			currentPlayer = firstPlayer;
 		}else {
