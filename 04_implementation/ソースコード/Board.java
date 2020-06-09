@@ -1,4 +1,4 @@
-package Mini;
+package Minipro;
 
 
 public class Board {
@@ -54,7 +54,6 @@ public class Board {
 	}
 	
 	public boolean canPlace(int x, int y) {
-		//getCell(x, y);
 		nizigenCells[x][y].getMark();
 		if(nizigenCells[x][y].getMark() != Mark.NONE) {
 			return false;
@@ -115,14 +114,6 @@ public class Board {
 		}
 		System.out.println("-------");
 	}
-	/*public void showBoard() {
-		System.out.println("＿＿＿＿＿");
-		System.out.println("|"+cells[0].getMark()+"|"+cells[1].getMark()+"|"+cells[2].getMark()+"|");
-		System.out.println("＿＿＿＿＿");
-		System.out.println("|"+cells[3].getMark()+"|"+cells[4].getMark()+"|"+cells[5].getMark()+"|");
-		System.out.println("＿＿＿＿＿");
-		System.out.println("|"+cells[6].getMark()+"|"+cells[7].getMark()+"|"+cells[8].getMark()+"|");
-		System.out.println("＿＿＿＿＿");
-	}*/
+	
 
 }
