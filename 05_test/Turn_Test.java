@@ -13,7 +13,6 @@ public class Turn_Test {
 		Board board = new Board();
 		Turn turn = new Turn(p);
 		turn.execute(board);
-		//turn.showTurn();
 		board.showBoard();
 	}
 
@@ -24,7 +23,6 @@ public class Turn_Test {
 		Board board = new Board();
 		Turn turn = new Turn(p);
 		turn.execute(board);
-		//turn.showTurn();
 		board.showBoard();
 	}
 
