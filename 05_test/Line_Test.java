@@ -9,7 +9,6 @@ public class Line_Test {
 	
 	@Test
 	public void Test1() {
-		Player current = new Player("先攻",Mark.CIRCLE);
 		Cell cell1 = new Cell(1,1);
 		Cell cell2 = new Cell(2,2);
 		Cell cell3 = new Cell(3,3);
@@ -19,14 +18,13 @@ public class Line_Test {
 		
 		Line line = new Line(cell1,cell2,cell3);
 		
-		boolean result = line.isConsective(current);
+		boolean result = line.isConsective();
 		
 		assertThat(result, is (true));
 	}
 	
 	@Test
 	public void Test2() {
-		Player current = new Player("先攻",Mark.CIRCLE);
 		Cell cell1 = new Cell(1,1);
 		Cell cell2 = new Cell(2,2);
 		Cell cell3 = new Cell(3,3);
@@ -36,7 +34,7 @@ public class Line_Test {
 		
 		Line line = new Line(cell1,cell2,cell3);
 		
-		boolean result = line.isConsective(current);
+		boolean result = line.isConsective();
 		
 		assertThat(result, is (false));
 	}
