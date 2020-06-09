@@ -1,4 +1,4 @@
-package Minipro;
+package Mini;
 
 enum Mark{CIRCLE, CROSS, NONE,}
 
@@ -10,6 +10,7 @@ public class Cell {
 	public Cell(int x, int y) {
 		this.x = x;
 		this.y = y;
+		this.mark = Mark.NONE;
 	}
 	
 	public Mark getMark() {
@@ -18,6 +19,14 @@ public class Cell {
 	
 	public void setMark(Mark mark) {
 		this.mark = mark;
+	}
+	
+	public int getX() {
+		return this.x;
+	}
+	
+	public int getY() {
+		return this.y;
 	}
 
 }
