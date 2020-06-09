@@ -1,4 +1,4 @@
-package Mini;
+package Minipro;
 
 enum Mark{CIRCLE, CROSS, NONE,}
 

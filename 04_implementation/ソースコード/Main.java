@@ -1,4 +1,4 @@
-package Mini;
+package Minipro;
 
 public class Main {
 
@@ -7,8 +7,6 @@ public class Main {
 		Player firstPlayer = new Player("先攻", Mark.CIRCLE);
 		Player secondPlayer = new Player("後攻", Mark.CROSS);
 		Game game = new Game(firstPlayer, secondPlayer);
-		Board board = new Board();
-		
 		game.start();
 
 
